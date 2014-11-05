@@ -1,1 +1,46 @@
-<h1>Home Page</h1>
+<div class="row">
+<!-- Display all contacts in DB -->
+  <div class="col-lg-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="contacts">
+
+      </tbody>
+    </table>
+  </div>
+
+<!-- create a new contact -->
+<div class="col-lg-6">
+  <form role="form" id="new_contact_form" method="POST" url="/contacts">
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input class="form-control" type="text" name="firstname" id="firstname">
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input class="form-control" type="text" name="lastname" id="lastname">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+       <input class="form-control" type="text" name="email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input class="form-control" type="text" name="phone" id="phone">
+    </div>
+    <div>
+      <button class="btn btn-primary" id="submit_button">Submit</button> 
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- find a contact -->
